@@ -1,0 +1,16 @@
+<div id="box" style="width:50px; height:50px; background-color:red; position:absolute;"></div>
+
+<script>
+  let box = document.getElementById('box');
+  let position = 0;
+  let interval = setInterval(moveBox, 10);
+
+  function moveBox() {
+    if (position >= 300) {
+      clearInterval(interval);  // Para a animação ao atingir 300px
+    } else {
+      position++;
+      box.style.left = position + 'px';  // Move o quadrado para a direita
+    }
+  }
+</script>

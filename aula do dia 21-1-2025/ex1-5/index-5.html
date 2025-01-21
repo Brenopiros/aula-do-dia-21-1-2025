@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo ScrollReveal</title>
+        <!-- Inclui a biblioteca ScrollReveal -->
+        <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+    <!-- Elemento que será animado -->
+    <div class="animate">OOOOOOOOOOlá, mundo!</div>
+
+    <!-- Configuração das animações -->
+    <script>
+        ScrollReveal().reveal('.animate', {
+            origin: 'top',
+            distance: '100%',
+            duration: 1000,
+            delay: 300,
+            
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<div id="growBox" style="width:100px; height:100px; background-color:purple;"></div>
+
+<script>
+  let growBox = document.getElementById('growBox');
+
+  growBox.addEventListener('mouseover', function() {
+    growBox.style.transition = 'width 0.5s, height 0.5s';
+    growBox.style.width = '200px';
+    growBox.style.height = '200px';
+  });
+
+  growBox.addEventListener('mouseout', function() {
+    growBox.style.width = '100px';
+    growBox.style.height = '100px';
+  });
+</script>
